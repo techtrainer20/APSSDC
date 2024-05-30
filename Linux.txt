@@ -1,0 +1,93 @@
+cd <folder_name>
+
+cd .. (one step back)
+
+cd (exit)
+
+ctrl+L = clear screen
+
+----------
+
+mkdir <folder_name>
+
+rmdir <folder_name> (empty folder)
+
+rm -r <folder_name>(folder with files)
+
+--------------------------------
+
+sudo apt-get install leafpad
+
+Leafpad or mousepad,touch
+
+Leafpad <file_name.extention>
+Game.py,note.txt,..,
+
+Ex : leafpad
+---------------------------
+
+ls: Lists files and directories in the current directory in alphabetical order.
+ls *.etc | ls *.py: Incorrect syntax; attempts to list files with .etc extension and pass their output to list files with .
+      py extension, which might not work as intended.
+ls -a: Lists all files (including hidden files starting with .) in the current directory.
+ls -laS: Lists detailed information for all files (including hidden ones), sorted by file size in descending order (largest to smallest).
+---------------------------------------
+
+Rm <file_name>
+
+Cat <file_name>
+Pwd //present working directory 
+
+Cp <source(file)> <destination(path)> | copy , paste
+
+Mv <source> <destination> | cut,paste
+
+--------------------------------------
+
+Sudo su // root access || sudo -i
+
+
+grep -i est  cars.txt
+Echo cmd
+    x=10
+     echo $x
+------------------------
+
+Sudo adduser username
+
+Sudo deluser username
+
+Shift user 
+   su username
+  passwd 
+exit
+---------------------------------
+
+Linux servers
+
+Service apache2 start
+
+
+Serivice apache2 status
+
+Service apache2 stop
+Hosting webpage using Apache server
+Service apache2 start
+Visit Path  /var/www/html
+Add index.html file include basic html tag
+Open terminal type ifconfig get local ip
+Put that local ip into firefox
+----------------------------------
+
+
+project 
+
+
+pip install pynput
+
+pip install jsonlib
+
+
+
+
+
