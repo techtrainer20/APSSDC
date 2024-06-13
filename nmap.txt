@@ -1,0 +1,44 @@
+1) arp || gateway 
+
+2) arp-scan -l (scan target)
+
+3)nmap <ip> | ex: nmap 192.168.0.1 | 1000 ports
+
+4)nmap -p <port || ex : nmap 192.168.0.1 -p 80   | 0-65535
+
+5) nmap -p- | ex : nmap 192.168.0.1 -p- ( scan all ports upto 0-65535)
+
+6) apt install leafpad
+
+7)nmap 192.168.163.1-255 | scan multi
+-----------------------------------------------
+8)nmap -iL <filename> | import
+---------------------------------------------
+9)nmap 192.168.0.1 -p- -o test.txt | u get result export
+
+10)nmap 192.168.0.1 > test.txt | no result only export
+-------------------------------------------------------------
+
+11)nmap -O <target_ip>  | find os type using ip
+
+12) nmap <traget_ip> -sV or nmap -p 80 -sV |
+13) nmap -T(0-5) <target_ip> || time delay
+
+
+------------------
+
+1)tcp 3way sys,ack,rst--> nmap -sT 192.168.163.131 -p 21
+    
+    stealth - nmap -sS 192.168.163.131 -p 21
+
+2)udp 2 way arp,icmp--> 
+nmap -sU 192.168.163.131
+
+----------------------------
+Host up
+
+nmap -Pn <target_ip>
+------------------------------
+
+*nmap --script vuln 192.168.163.131
+--------------

